@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label fx:id="lblIncome" layoutX="18.0" layoutY="61.0" prefHeight="43.0" prefWidth="234.0" text="Monthly income:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIncome" layoutX="206.0" layoutY="70.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="txtEducation" layoutX="206.0" layoutY="162.0" />
+            <Separator layoutX="141.0" layoutY="231.0" opacity="0.0" prefHeight="0.0" prefWidth="98.0" />
+            <Separator blendMode="DARKEN" layoutX="7.0" layoutY="138.0" opacity="0.0" prefHeight="15.0" prefWidth="349.0" />
+            <Separator layoutX="321.0" layoutY="231.0" opacity="0.0" prefHeight="1.0" prefWidth="122.0" />
+            <Button fx:id="btnVisualize" layoutX="214.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Visualize Your Budget">
+               <opaqueInsets>
+                  <Insets right="44.0" />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="171.0" layoutY="-3.0" text="The Ultimate Budgeter">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIncome1" layoutX="18.0" layoutY="153.0" prefHeight="43.0" prefWidth="190.0" text="Education Expenses">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIncome11" layoutX="18.0" layoutY="192.0" prefHeight="43.0" prefWidth="190.0" text="Housing Expenses">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtHousing" layoutX="206.0" layoutY="201.0" />
+            <TextField fx:id="txtFood" layoutX="206.0" layoutY="240.0" />
+            <Label fx:id="lblIncome111" layoutX="18.0" layoutY="231.0" prefHeight="43.0" prefWidth="190.0" text="Food Expenses">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblResult" layoutX="369.0" layoutY="42.0" prefHeight="317.0" prefWidth="500.0">
+               <opaqueInsets>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtTransportation" layoutX="207.0" layoutY="281.0" />
+            <Label fx:id="lblIncome1111" layoutX="18.0" layoutY="272.0" prefHeight="43.0" prefWidth="190.0" text="Transportation Expenses">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnTotal" layoutX="18.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Calculate Total Expenses">
+               <opaqueInsets>
+                  <Insets right="44.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnPlan" layoutX="209.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Plan My Budget">
+               <opaqueInsets>
+                  <Insets right="44.0" />
+               </opaqueInsets>
+            </Button>
+            <Label fx:id="lblIncome2" layoutX="18.0" layoutY="95.0" prefHeight="43.0" prefWidth="234.0" text="Budget Planning Wizard:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
